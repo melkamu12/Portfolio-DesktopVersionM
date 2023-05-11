@@ -1,0 +1,23 @@
+{
+  "name": "portfolio-desktopversionm",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/melkamu12/Portfolio-DesktopVersionM.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/melkamu12/Portfolio-DesktopVersionM/issues"
+  },
+  "homepage": "https://github.com/melkamu12/Portfolio-DesktopVersionM#readme",
+  "devDependencies": {
+    "hint": "^7.1.8"
+  }
+}
