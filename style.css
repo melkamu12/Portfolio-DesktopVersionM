@@ -84,6 +84,7 @@ body {
   line-height: 24px;
   font-weight: 400;
   color: #344563;
+  font-size: 20px;
   font-family: "Poppins", sans-serif;
 }
 
@@ -122,6 +123,8 @@ body {
 
 .tonic-image {
   width: 95%;
+  border-radius: 8px;
+  padding-left: 24px;
   object-fit: contain;
 }
 
@@ -181,6 +184,8 @@ body {
   cursor: pointer;
   text-align: center;
   color: hsl(234, 100%, 69%);
+  font-family: "Poppins", sans-serif;
+
 }
 
 .about-meheader {
@@ -193,6 +198,7 @@ body {
 
 #about-contact {
   display: block;
+  font-family: "Poppins", sans-serif;
   background-color: hsl(0, 0%, 100%);
 }
 
@@ -200,6 +206,7 @@ body {
   list-style-type: none;
   background-color: #f7f7f9;
   border-radius: 0.8rem;
+  font-family: "Poppins", sans-serif;
   display: flex;
   align-items: center;
   gap: 2.4rem;
@@ -224,6 +231,7 @@ body {
 
 .btnResume {
   padding: 10px 40px;
+  font-family: "Poppins", sans-serif;
   border-radius: 8px;
   color: hsl(234, 100%, 69%);
   background-color: hsl(0, 0%, 100%);
@@ -310,6 +318,7 @@ body {
 
 .about-me {
   font-weight: 700;
+  font-family: "Poppins", sans-serif;
   font-weight: bold;
   font-size: 50px;
   margin: 2px;
