@@ -185,7 +185,6 @@ body {
   text-align: center;
   color: hsl(234, 100%, 69%);
   font-family: "Poppins", sans-serif;
-
 }
 
 .about-meheader {
@@ -319,7 +318,6 @@ body {
 .about-me {
   font-weight: 700;
   font-family: "Poppins", sans-serif;
-  font-weight: bold;
   font-size: 50px;
   margin: 2px;
   align-items: center;
