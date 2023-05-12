@@ -49,6 +49,7 @@
 - adaptation the media query with 768px above and bellow.
 - adding the work list
 
+
 ## 💻 Getting Started <a name="getting-started"></a>
 
 To get a local copy up and running, follow these steps.
@@ -140,6 +141,7 @@ Example command:
 Contributions, issues, and feature requests are welcome!
 
 Feel free to check the [issues page](git@github.com:melkamu12/Portfolio-DesktopVersionM.git).
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
