@@ -458,6 +458,22 @@ textarea {
   padding: 4px;
 }
 
+.about_myself__menu {
+  width: 40%;
+  flex: 1;
+  box-sizing: border-box;
+  float: left;
+  padding: 4px;
+}
+
+.about-myself__block {
+  width: 60%;
+  flex: 1;
+  box-sizing: border-box;
+  float: left;
+  padding: 4px;
+}
+
 .contact-application::after {
   content: "";
   display: table;
@@ -583,6 +599,7 @@ textarea {
   .about-myself__block {
     flex: 0;
     padding: 20px;
+    width: 100%;
   }
 
   .about-me {
@@ -636,5 +653,13 @@ textarea {
     height: 5rem;
     padding: 24px 40px;
     background-color: #fff;
+  }
+
+  .about_myself__menu {
+    width: 100%;
+    flex: 1;
+    box-sizing: border-box;
+    float: left;
+    padding: 4px;
   }
 }
