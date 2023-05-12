@@ -589,7 +589,7 @@ textarea {
     list-style-type: none;
     background-color: #f7f7f9;
     border-radius: 0.8rem;
-    width: 100%;
+    width: 99%;
     display: flex;
     flex-direction: row;
     align-items: center;
