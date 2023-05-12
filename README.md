@@ -44,8 +44,10 @@
 
 - write cascide style sheet
 - include image of social network icon
-- writing javascript
-- working with accordian
+- Adding contact form 
+- applying desktop adaptability with out affect your mobile version.
+- adaptation the media query with 768px above and bellow.
+- adding the work list
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
@@ -129,9 +131,9 @@ Example command:
 
 ## Future Features
 
-- [ ] **[Make-website-responsive-to-desktop]**
-- [ ] **[Adding-Contact-Form]**
-- [ ] **[Working-java-script]**
+- [ ] **[Make-website-responsive-to-desktop and mobile]**
+- [ ] **[Adding-Javascript]**
+- [ ] **[Adding react]**
 
 ## 🤝 Contributing <a name="contributing"></a>
 
