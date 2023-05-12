@@ -8,21 +8,10 @@
     <title>My Portfolio</title>
   </head>
   <body>
-    <section class="menu-mobile">
-      <div id="menu-container" class="mobile-menu-container">
-        <div class="bg-img"></div>
-        <button class="close-btn">x</button>
-        <ul class="mobile-menu-ul" id="anchor-tags">
-          <li><a href="#works">Portfolio</a></li>
-          <li><a href="#about-myself">About</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </div>
-    </section>
     <header class="main-header">
       <nav>
         <ul class="header-menu">
-          <li><a href="#" class="info-text">Melkamu</a></li>
+          <li class="logo"><a href="#" class="info-text">My Logo</a></li>
           <li>
             <a href="#" id="hamburger-btn" class="nav__button"
               ><i
@@ -35,9 +24,13 @@
           </li>
           <li class="desktop-menu-container">
             <ul class="menu-lists">
-              <li class="item"><a href="#portfolio">Portfolio</a></li>
-              <li class="item"><a href="#about">About</a></li>
-              <li class="item"><a href="#contact">Contact</a></li>
+              <li class="item">
+                <a href="#portfolio" class="menuname">Portfolio</a>
+              </li>
+              <li class="item"><a href="#about" class="menuname">About</a></li>
+              <li class="item">
+                <a href="#contact" class="menuname">Contact</a>
+              </li>
             </ul>
           </li>
         </ul>
@@ -199,7 +192,7 @@
       </section>
       <div id="about-contact">
         <section class="about-meheader" id="about">
-          <div class="card-box">
+          <div class="about-myself__block">
             <h1 class="about-me">About Myself!</h1>
             <p class="AboutContent">
               Hello I'm a software developer! I can help you build a product,
@@ -227,15 +220,15 @@
             </ul>
             <input type="submit" class="btnResume" value="Get My Resume" />
           </div>
-          <div class="card-box">
+          <div class="about_myself__menu">
             <ul class="skill">
               <li class="skill-title">
                 <h3 class="skill-heading">Languages</h3>
                 <img src="Asset/Union.png" alt="Close more View" />
               </li>
-              <li>
+              <li class="skill-title">
                 <ul class="languages-elements">
-                  <li>
+                  <li class="languageSkill">
                     <span>
                       <img
                         class="Language-logo"
@@ -247,7 +240,7 @@
                     </span>
                     <p>JavaScript</p>
                   </li>
-                  <li>
+                  <li class="languageSkill">
                     <span>
                       <img
                         class="Language-Logo"
@@ -257,7 +250,7 @@
                     </span>
                     <p>HTML</p>
                   </li>
-                  <li>
+                  <li class="languageSkill">
                     <span>
                       <img
                         class="Language-Logo"
@@ -322,7 +315,7 @@
                     required
                   ></textarea>
                 </div>
-                <div>
+                <div class="btncontainer">
                   <input
                     type="submit"
                     class="btnGettouch"
