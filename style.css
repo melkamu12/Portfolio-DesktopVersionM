@@ -10,6 +10,37 @@
 body {
   background-color: #e5e5e5;
   font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+}
+
+.flexbox-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flexbox-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.flexbox-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.flexbox-row_socialicon {
+  display: flex;
+  flex-direction: row;
 }
 
 .about-me {
@@ -22,7 +53,7 @@ body {
 }
 
 .AboutContent {
-  padding-left: 1px;
+  padding: 2px;
   font-weight: 400;
   font-size: 17px;
   color: #344563;
@@ -31,12 +62,9 @@ body {
 
 /* Form styles */
 .contact-application {
-  display: flex;
   padding-left: 100px;
   padding-top: 40px;
-  align-items: center;
   font-family: "Poppins", sans-serif;
-  justify-content: center;
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center center;
@@ -48,7 +76,6 @@ body {
 .social {
   list-style: none;
   padding-left: 0;
-  display: flex;
   gap: 8px;
   margin: 0;
   margin: 15px 0;
@@ -70,10 +97,28 @@ body {
   background-color: #f7f7f9;
   border-radius: 0.8rem;
   font-family: "Poppins", sans-serif;
-  display: flex;
-  flex-direction: column;
   align-items: center;
   gap: 10px;
+}
+
+.menu-mobile {
+  display: none;
+}
+
+.menu-lists {
+  list-style: none;
+  margin-left: 20px;
+}
+
+.menu-lists li {
+  margin-left: 15px;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+  align-items: center;
+  text-align: center;
+  color: hsl(218, 31%, 30%);
 }
 
 .social li:last-child {
@@ -127,8 +172,6 @@ body {
 }
 
 .container {
-  display: flex;
-  flex-direction: column;
   padding: 160px 130px;
   font-family: "Poppins", sans-serif;
   background: url("Asset/BgImage.png") no-repeat;
@@ -146,7 +189,6 @@ body {
 
 .header-menu {
   width: 100%;
-  display: flex;
   list-style: none;
   justify-content: space-between;
   align-items: center;
@@ -165,7 +207,6 @@ body {
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 500;
-  display: flex;
   align-items: center;
   text-align: center;
   color: hsl(218, 31%, 30%);
@@ -181,7 +222,6 @@ body {
   font-weight: 700;
   font-size: 18px;
   line-height: 20px;
-  display: flex;
   align-items: center;
   text-align: center;
   color: hsl(234, 100%, 69%);
@@ -212,13 +252,12 @@ body {
 }
 
 .connect {
-  padding: 0 10px;
+  padding: 20px 10px;
   color: #7f8cff;
 }
 
 .card {
   margin-block: 104px;
-  display: flex;
   grid-template-columns: 1fr;
   width: 90%;
   background-color: #fff;
@@ -239,7 +278,6 @@ body {
 }
 
 .HeaderTitle {
-  display: flex;
   align-items: center;
   margin: 1px;
 }
@@ -290,8 +328,6 @@ body {
 
 .skill-box {
   list-style: none;
-  display: flex;
-  flex-direction: row;
   align-items: center;
   padding-inline-start: 0;
   font-family: "Poppins", sans-serif;
@@ -300,7 +336,6 @@ body {
 }
 
 .about-meheader {
-  display: flex;
   background-color: hsl(0, 0%, 100%);
   border-top-right-radius: 60px;
   padding-top: 80px;
@@ -328,8 +363,6 @@ body {
 }
 
 .skill-title {
-  display: flex;
-  align-items: center;
   margin-bottom: 30px;
   justify-content: space-between;
 }
@@ -342,14 +375,16 @@ body {
 }
 
 .languageSkill {
-  width: 122px;
+  width: 130px;
+  height: 130px;
+  justify-content: center;
+  align-items: center;
 }
 
 .languages-elements {
-  display: flex;
-  flex-direction: row;
   font-family: "Poppins", sans-serif;
   gap: 10px;
+  text-align: left;
   padding-inline-start: 0;
   padding: 12px 15px;
 }
@@ -397,8 +432,6 @@ body {
 }
 
 form {
-  display: flex;
-  flex-direction: column;
   font-family: 'Poppins', sans-serif;
 }
 
@@ -441,9 +474,7 @@ textarea {
 }
 
 .btncontainer {
-  display: flex;
   justify-content: center;
-  align-items: center;
 }
 
 .btnGettouch:hover {
@@ -480,66 +511,38 @@ textarea {
   clear: both;
 }
 
-/* menu */
-.menu-lists {
-  list-style: none;
-}
-
-.menu-mobile {
-  display: none;
-}
-
-@media (max-width: 768px) {
-  .menu-lists {
-    display: none;
-  }
-
-  .menu-lists.active {
-    display: block;
-    margin-top: 10px;
-  }
-}
-
-@media (min-width: 769px) {
-  .info-image {
-    display: none;
-  }
-
-  .menu-lists {
-    display: flex;
-    margin-left: 20px;
-  }
-
-  .menu-lists li {
-    margin-left: 15px;
-    font-family: 'Poppins', sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 20px;
-    align-items: center;
-    text-align: center;
-    color: hsl(218, 31%, 30%);
-  }
-}
-
 .menu-mobile.active {
   display: block;
 }
 
-@media (min-width: 768px) {
-  .menu-mobile {
-    display: none;
-  }
+.info-image {
+  display: none;
 }
 
 @media (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+
   .desktop-menu-container {
     display: none;
   }
 
-  .container {
+  .info-image {
+    display: block;
+  }
+
+  .flexbox-column {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .flexbox-row {
     display: flex;
     flex-direction: column;
+  }
+
+  .container {
     padding: 40px 30px;
     font-family: "Poppins", sans-serif;
     background: url("Asset/BgImage.png") no-repeat;
@@ -561,8 +564,6 @@ textarea {
   }
 
   .card {
-    display: flex;
-    flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
   }
@@ -576,8 +577,6 @@ textarea {
   }
 
   .languages-elements {
-    display: flex;
-    flex-direction: column;
     font-family: "Poppins", sans-serif;
     gap: 10px;
     width: 295px;
@@ -586,12 +585,12 @@ textarea {
   }
 
   .languages-elements li {
+    display: flex;
+    flex-direction: row;
     list-style-type: none;
     background-color: #f7f7f9;
     border-radius: 0.8rem;
     width: 99%;
-    display: flex;
-    flex-direction: row;
     align-items: center;
     gap: 2.4rem;
   }
@@ -619,7 +618,6 @@ textarea {
   }
 
   .social {
-    display: flex;
     list-style: none;
     margin-bottom: 20px;
   }
@@ -629,7 +627,6 @@ textarea {
   }
 
   .contact-application {
-    display: flex;
     margin-top: 50px;
     padding-left: 10px;
     padding-top: 50px;
@@ -661,5 +658,14 @@ textarea {
     box-sizing: border-box;
     float: left;
     padding: 4px;
+  }
+
+  .menu-lists {
+    display: none;
+  }
+
+  .menu-lists.active {
+    display: block;
+    margin-top: 10px;
   }
 }
