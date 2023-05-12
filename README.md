@@ -79,7 +79,7 @@ Example commands:
 
 ```sh
   cd my-folder
-  git clone git@github.com:melkamu12/MobilePortfolioFinish.git
+  git clone git@github.com:melkamu12/Portfolio-DesktopVersionM.git
 ```
 
 ### Install
@@ -137,7 +137,7 @@ Example command:
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](git@github.com:melkamu12/MyPortfoliodesktop.git).
+Feel free to check the [issues page](git@github.com:melkamu12/Portfolio-DesktopVersionM.git).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
