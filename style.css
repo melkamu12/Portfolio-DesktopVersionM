@@ -627,7 +627,7 @@ p.Content {
   padding: 0.6rem 1rem;
 }
 
-.check-link {
+.check-btn {
   display: flex;
   gap: 1rem;
   font-size: 1.5rem;
@@ -734,8 +734,8 @@ p.Content {
 
 .Projectlink {
   display: flex;
-  position: absolute;
-  gap: 1rem;
+  position: relative;
+  gap: 0.5rem;
 }
 
 .projectlink::after {
