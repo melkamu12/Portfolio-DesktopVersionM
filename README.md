@@ -49,6 +49,7 @@
 - adaptation the media query with 768px above and bellow.
 - adding the work list
 - adding modal popup window to display project details.
+- adding Javascript formvalidation
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
