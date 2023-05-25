@@ -12,7 +12,6 @@ form.addEventListener('input', () => {
   contactFormData.fullName = userName.value;
   contactFormData.email = userEmail.value;
   contactFormData.message = userMessage.value;
-
   localStorage.setItem('contactFormData', JSON.stringify(contactFormData));
 });
 
