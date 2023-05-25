@@ -1,59 +1,59 @@
-const project = document.querySelector('#work');
+const project = document.querySelector("#work");
 let projectElement;
 
 if (project === null) {
-  projectElement = document.createElement('section');
-  projectElement.id = 'work';
+  projectElement = document.createElement("section");
+  projectElement.id = "work";
 } else {
   projectElement = project;
 }
 
 const projects = [
   {
-    name: 'Tonic',
-    projectInfo: ['CONOPY', 'Back End Dev', '2015'],
+    name: "Tonic",
+    projectInfo: ["CONOPY", "Back End Dev", "2015"],
     description:
-      'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    featuredImage: 'Asset/Snapshoot Portfolio.png',
-    Skills: ['html', 'css', 'javaScript'],
-    liveVersion: '#',
-    sourceLink: '#',
+      "A daily selection of privately personalized reads; no accounts or sign-ups required.",
+    featuredImage: "Asset/Snapshoot Portfolio.png",
+    Skills: ["html", "css", "javaScript"],
+    liveVersion: "#",
+    sourceLink: "#",
   },
   {
-    name: 'Multi-Post Stories',
-    projectInfo: ['FACEBOOK', 'Full Stack Dev', '2015'],
+    name: "Multi-Post Stories",
+    projectInfo: ["FACEBOOK", "Full Stack Dev", "2015"],
     description:
-      'Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.',
-    featuredImage: 'Asset/Snapshoot Portfolio1.png',
-    Skills: ['html', 'Ruby on rails', 'css', 'javaScript'],
-    liveVersion: '#',
-    sourceLink: '#',
+      "Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.",
+    featuredImage: "Asset/Snapshoot Portfolio1.png",
+    Skills: ["html", "css", "javaScript"],
+    liveVersion: "#",
+    sourceLink: "#",
   },
   {
-    name: 'Facebook 360',
-    projectInfo: ['CONOPY', 'Full Stack Dev', '2015'],
+    name: "Facebook 360",
+    projectInfo: ["CONOPY", "Full Stack Dev", "2015"],
     description:
-      'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    featuredImage: 'Asset/Snapshoot Portfolio2.png',
-    Skills: ['html', 'css', 'javaScript'],
-    liveVersion: '#',
-    sourceLink: '#',
+      "A daily selection of privately personalized reads; no accounts or sign-ups required.",
+    featuredImage: "Asset/Snapshoot Portfolio2.png",
+    Skills: ["html", "css", "javaScript"],
+    liveVersion: "#",
+    sourceLink: "#",
   },
   {
-    name: 'Uber Navigation',
-    projectInfo: ['Uber', 'Lead Developer', '2015'],
+    name: "Uber Navigation",
+    projectInfo: ["Uber", "Lead Developer", "2015"],
     description:
-      'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    featuredImage: 'Asset/Snapshoot Portfolio3.png',
-    Skills: ['html', 'css', 'javaScript'],
-    liveVersion: '#',
-    sourceLink: '#',
+      "A daily selection of privately personalized reads; no accounts or sign-ups required.",
+    featuredImage: "Asset/Snapshoot Portfolio3.png",
+    Skills: ["html", "css", "javaScript"],
+    liveVersion: "#",
+    sourceLink: "#",
   },
 ];
 
-let template = '';
+let template = "";
 projects.forEach((project, index) => {
-  let Skills = '';
+  let Skills = "";
   project.Skills.forEach((skill) => {
     Skills += `<li>${skill}</li>`;
   });
@@ -90,14 +90,14 @@ projectElement.innerHTML = template;
 
 // POPUP window
 
-const popupContainer = document.createElement('div');
-popupContainer.classList.add('popup-container');
+const popupContainer = document.createElement("div");
+popupContainer.classList.add("popup-container");
 
-const overlay = document.querySelector('#popup');
-const seeProjectEl = document.querySelectorAll("[id^='see-project-']");
+const overlay = document.querySelector("#popup");
+const Each_ProjectDetail = document.querySelectorAll("[id^='see-project-']");
 
 function createPopup(project) {
-  let Skills = '';
+  let Skills = "";
   project.Skills.forEach((skill) => {
     Skills += `<li>${skill}</li>`;
   });
@@ -106,7 +106,7 @@ function createPopup(project) {
         <div class="project-card Project-container container-popup">
           <div class="project-title">
             <h3 class="heading-project">${project.name}</h3>
-            <button class="popup-close-btn">
+            <button class="popupCloseButton">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="popup-close-icon">
               <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"></path>
             </svg>
@@ -127,8 +127,8 @@ function createPopup(project) {
               ${project.description}
             </p>
             <div class="popup-Skills">
-              <ul class="skill-box flexbox-row_socialicon">
-                ${Skills}
+            <ul class="skill-box flexbox-row_socialicon">
+                    ${Skills}
               </ul>
               <div class="check-btn">
               <div class="Projectlink">
@@ -171,15 +171,15 @@ function createPopup(project) {
   document.body.appendChild(popupContainer);
 }
 
-seeProjectEl.forEach((button, index) => {
-  button.addEventListener('click', () => {
+Each_ProjectDetail.forEach((button, index) => {
+  button.addEventListener("click", () => {
     const project = projects[index];
     createPopup(project);
-    const popupClose = document.querySelector('.popup-close-btn');
-    const closeModal = () => {
+    const popupClose = document.querySelector(".popupCloseButton");
+    const closePopupModel = () => {
       popupContainer.remove();
     };
-    popupClose.addEventListener('click', closeModal);
-    overlay.addEventListener('click', closeModal);
+    popupClose.addEventListener("click", closePopupModel);
+    overlay.addEventListener("click", closePopupModel);
   });
 });

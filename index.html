@@ -279,7 +279,12 @@
                 feature that you need built or a project that needs coding. I’d
                 love to help with it!
               </p>
-              <form class="flex-form" id="contact-form" action="" method="POST">
+              <form
+                class="flex-form"
+                id="contact-form"
+                action="https://formspree.io/f/mwkjzvej"
+                method="POST"
+              >
                 <div class="form-group">
                   <input
                     type="text"
@@ -313,8 +318,10 @@
                     type="submit"
                     class="btnGettouch"
                     value="Get in touch"
+                    onclick="validateEmail(event)"
                   />
                 </div>
+                <p id="error-message"></p>
               </form>
             </div>
           </section>
@@ -323,5 +330,6 @@
     </main>
     <script src="menuScript.js"></script>
     <script src="DetailsPopup.js"></script>
+    <script src="FormValidation.js"></script>
   </body>
 </html>

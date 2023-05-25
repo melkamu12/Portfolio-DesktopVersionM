@@ -546,6 +546,14 @@ p.Content {
   border-bottom: 1px solid #c8d1e776;
 }
 
+.error-message {
+  color: hsla(0, 0%, 0%, 0.929);
+  font-size: 20px;
+  text-align: center;
+  justify-content: center;
+  padding-left: 30vw;
+}
+
 /* popup windows design   */
 .Project-container {
   margin: auto 3vw;
@@ -607,7 +615,7 @@ p.Content {
   justify-content: space-between;
 }
 
-.popup-close-btn {
+.popupCloseButton {
   background: none;
   border: none;
   cursor: pointer;
@@ -633,12 +641,6 @@ p.Content {
   font-size: 1.5rem;
 }
 
-.line {
-  display: flex;
-  position: relative;
-  gap: 1rem;
-}
-
 .popup-logo {
   display: flex;
   align-items: center;
@@ -649,8 +651,7 @@ p.Content {
   fill: #fff;
 }
 
-.project-lang,
-.check-btn {
+.project-lang {
   justify-content: center;
 }
 
@@ -688,9 +689,9 @@ p.Content {
 }
 
 .popup-details {
-  flex-direction: row;
+  flex-direction: column;
   gap: 0.3rem;
-  padding-top: 2rem;
+  padding-top: 5rem;
 }
 
 .popup-description {
@@ -720,7 +721,8 @@ p.Content {
   color: #344563;
   font-size: 1.5rem;
   line-height: 2.4rem;
-  padding-right: 10%;
+  padding-right: 2px;
+  padding-bottom: 5px;
 }
 
 .btn-popup {
@@ -740,7 +742,7 @@ p.Content {
 
 .projectlink::after {
   content: '';
-  position: absolute;
+  position: relative;
   height: 0.1rem;
   background-color: #e9e9e9;
   left: 0;
@@ -978,7 +980,8 @@ p.Content {
   }
 
   .popup-Skills {
-    width: 60%;
+    width: 40%;
+    padding-left: 20px;
   }
 
   .popup-btn {
