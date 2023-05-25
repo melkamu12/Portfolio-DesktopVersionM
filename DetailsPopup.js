@@ -94,7 +94,7 @@ const popupContainer = document.createElement("div");
 popupContainer.classList.add("popup-container");
 
 const overlay = document.querySelector("#popup");
-const Each_ProjectDetail = document.querySelectorAll("[id^='see-project-']");
+const EachProjectDetail = document.querySelectorAll("[id^='see-project-']");
 
 function createPopup(project) {
   let Skills = "";
@@ -171,7 +171,7 @@ function createPopup(project) {
   document.body.appendChild(popupContainer);
 }
 
-Each_ProjectDetail.forEach((button, index) => {
+EachProjectDetail.forEach((button, index) => {
   button.addEventListener("click", () => {
     const project = projects[index];
     createPopup(project);
