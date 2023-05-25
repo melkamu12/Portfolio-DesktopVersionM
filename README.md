@@ -48,6 +48,7 @@
 - applying desktop adaptability with out affect your mobile version.
 - adaptation the media query with 768px above and bellow.
 - adding the work list
+- adding modal popup window to display project details.
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
@@ -127,16 +128,16 @@ Example command:
 - GitHub: [@melkamu12](https://github.com/melkamu12)
 - LinkedIn: [melkamu-almawu](https://www.linkedin.com/in/melkamu-almawu/)
 
-**Author 2**
+👤 **Eloghene Otiede**
 
-- GitHub:
-- LinkedIn:
+- GitHub: [@geekelo](https://github.com/geekelo)
+- Twitter: [@Geekelo_xyz](https://twitter.com/Geekelo_xyz)
+- LinkedIn: [LinkedIn](https://linkedin.com/in/eloghene-otiede)
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Future Features
 
-- [ ] **[Make-website-responsive-to-desktop and mobile]**
-- [ ] **[Adding-Javascript]**
 - [ ] **[Adding react]**
 
 ## 🤝 Contributing <a name="contributing"></a>
