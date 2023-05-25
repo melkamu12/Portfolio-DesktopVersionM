@@ -545,6 +545,7 @@ p.Content {
 .Skill-border {
   border-bottom: 1px solid #c8d1e776;
 }
+
 #error-message {
   color: hsl(0, 100%, 50%);
   font-size: 20px;
