@@ -44,8 +44,11 @@
 
 - write cascide style sheet
 - include image of social network icon
-- writing javascript
-- working with accordian
+- Adding contact form
+- applying desktop adaptability with out affect your mobile version.
+- adaptation the media query with 768px above and bellow.
+- adding the work list
+- adding modal popup window to display project details.
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
@@ -79,7 +82,7 @@ Example commands:
 
 ```sh
   cd my-folder
-  git clone git@github.com:melkamu12/MobilePortfolioFinish.git
+  git clone git@github.com:melkamu12/Portfolio-DesktopVersionM.git
 ```
 
 ### Install
@@ -120,24 +123,28 @@ Example command:
 
 ## 👥 Authors <a name="authors"></a>
 
-👤 **Author**
+👤 **Melkamu Alemawu**
 
 - GitHub: [@melkamu12](https://github.com/melkamu12)
 - LinkedIn: [melkamu-almawu](https://www.linkedin.com/in/melkamu-almawu/)
+
+👤 **Eloghene Otiede**
+
+- GitHub: [@geekelo](https://github.com/geekelo)
+- Twitter: [@Geekelo_xyz](https://twitter.com/Geekelo_xyz)
+- LinkedIn: [LinkedIn](https://linkedin.com/in/eloghene-otiede)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Future Features
 
-- [ ] **[Make-website-responsive-to-desktop]**
-- [ ] **[Adding-Contact-Form]**
-- [ ] **[Working-java-script]**
+- [ ] **[Adding react]**
 
 ## 🤝 Contributing <a name="contributing"></a>
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](git@github.com:melkamu12/MyPortfoliodesktop.git).
+Feel free to check the [issues page](git@github.com:melkamu12/Portfolio-DesktopVersionM.git).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
