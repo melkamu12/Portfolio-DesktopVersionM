@@ -1,32 +1,27 @@
-// Retrieve data from local storage and fill the form
-function fillFormFromLocalStorage() {
-  const formData = JSON.parse(localStorage.getItem("formData"));
-  if (formData) {
-    document.getElementById("name").value = formData.name;
-    document.getElementById("email").value = formData.email;
-    document.getElementById("message").value = formData.message;
+const UserName = document.getElementById("name");
+const UserEmail = document.getElementById("email");
+const UserMessage = document.getElementById("message");
+const formcontrol = document.getElementById("contact-form");
+const contactFormData = {
+  UserFullName: String,
+  UseremailAddress: String,
+  UserMessageInformation: String,
+};
+
+formcontrol.addEventListener("input", () => {
+  contactFormData.UserFullName = UserName.value;
+  contactFormData.email = UserEmail.value;
+  contactFormData.UserMessageInformation = UserMessage.value;
+
+  localStorage.setItem("contactFormData", JSON.stringify(contactFormData));
+});
+
+window.onload = () => {
+  const contactData = JSON.parse(localStorage.getItem("contactFormData"));
+
+  if (contactData) {
+    UserName.value = contactData.UserFullName;
+    UserEmail.value = contactData.UseremailAddress;
+    UserMessage.value = contactData.UserMessageInformation;
   }
-}
-
-// Add event listeners to input fields
-document
-  .getElementById("name")
-  .addEventListener("input", saveFormDataToLocalStorage);
-document
-  .getElementById("email")
-  .addEventListener("input", saveFormDataToLocalStorage);
-document
-  .getElementById("message")
-  .addEventListener("input", saveFormDataToLocalStorage);
-
-//Load form data from local storage on page load
-fillFormFromLocalStorage();
-//Save data to local storage when input fields change
-function saveFormDataToLocalStorage() {
-  const formData = {
-    name: document.getElementById("name").value,
-    email: document.getElementById("email").value,
-    message: document.getElementById("message").value,
-  };
-  localStorage.setItem("formData", JSON.stringify(formData));
-}
+};
