@@ -129,7 +129,6 @@ Example command:
 - LinkedIn: [melkamu-almawu](https://www.linkedin.com/in/melkamu-almawu/)
 
 👤 **Eloghene Otiede**
-
 - GitHub: [@geekelo](https://github.com/geekelo)
 - Twitter: [@Geekelo_xyz](https://twitter.com/Geekelo_xyz)
 - LinkedIn: [LinkedIn](https://linkedin.com/in/eloghene-otiede)
