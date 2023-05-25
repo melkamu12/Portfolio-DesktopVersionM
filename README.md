@@ -123,7 +123,7 @@ Example command:
 
 ## 👥 Authors <a name="authors"></a>
 
-👤 **Author 1**
+👤 **Melkamu Alemawu**
 
 - GitHub: [@melkamu12](https://github.com/melkamu12)
 - LinkedIn: [melkamu-almawu](https://www.linkedin.com/in/melkamu-almawu/)
