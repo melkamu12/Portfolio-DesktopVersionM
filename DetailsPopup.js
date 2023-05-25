@@ -1,59 +1,59 @@
-const project = document.querySelector("#work");
+const project = document.querySelector('#work');
 let projectElement;
 
 if (project === null) {
-  projectElement = document.createElement("section");
-  projectElement.id = "work";
+  projectElement = document.createElement('section');
+  projectElement.id = 'work';
 } else {
   projectElement = project;
 }
 
 const projects = [
   {
-    name: "Tonic",
-    projectInfo: ["CONOPY", "Back End Dev", "2015"],
+    name: 'Tonic',
+    projectInfo: ['CONOPY', 'Back End Dev', '2015'],
     description:
-      "A daily selection of privately personalized reads; no accounts or sign-ups required.",
-    featuredImage: "Asset/Snapshoot Portfolio.png",
-    Skills: ["html", "css", "javaScript"],
-    liveVersion: "#",
-    sourceLink: "#",
+      'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    featuredImage: 'Asset/Snapshoot Portfolio.png',
+    Skills: ['html', 'css', 'javaScript'],
+    liveVersion: '#',
+    sourceLink: '#',
   },
   {
-    name: "Multi-Post Stories",
-    projectInfo: ["FACEBOOK", "Full Stack Dev", "2015"],
+    name: 'Multi-Post Stories',
+    projectInfo: ['FACEBOOK', 'Full Stack Dev', '2015'],
     description:
-      "Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.",
-    featuredImage: "Asset/Snapshoot Portfolio1.png",
-    Skills: ["html", "css", "javaScript"],
-    liveVersion: "#",
-    sourceLink: "#",
+      'Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.',
+    featuredImage: 'Asset/Snapshoot Portfolio1.png',
+    Skills: ['html', 'css', 'javaScript'],
+    liveVersion: '#',
+    sourceLink: '#',
   },
   {
-    name: "Facebook 360",
-    projectInfo: ["CONOPY", "Full Stack Dev", "2015"],
+    name: 'Facebook 360',
+    projectInfo: ['CONOPY', 'Full Stack Dev', '2015'],
     description:
-      "A daily selection of privately personalized reads; no accounts or sign-ups required.",
-    featuredImage: "Asset/Snapshoot Portfolio2.png",
-    Skills: ["html", "css", "javaScript"],
-    liveVersion: "#",
-    sourceLink: "#",
+      'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    featuredImage: 'Asset/Snapshoot Portfolio2.png',
+    Skills: ['html', 'css', 'javaScript'],
+    liveVersion: '#',
+    sourceLink: '#',
   },
   {
-    name: "Uber Navigation",
-    projectInfo: ["Uber", "Lead Developer", "2015"],
+    name: 'Uber Navigation',
+    projectInfo: ['Uber', 'Lead Developer', '2015'],
     description:
-      "A daily selection of privately personalized reads; no accounts or sign-ups required.",
-    featuredImage: "Asset/Snapshoot Portfolio3.png",
-    Skills: ["html", "css", "javaScript"],
-    liveVersion: "#",
-    sourceLink: "#",
+      'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    featuredImage: 'Asset/Snapshoot Portfolio3.png',
+    Skills: ['html', 'css', 'javaScript'],
+    liveVersion: '#',
+    sourceLink: '#',
   },
 ];
 
-let template = "";
+let template = '';
 projects.forEach((project, index) => {
-  let Skills = "";
+  let Skills = '';
   project.Skills.forEach((skill) => {
     Skills += `<li>${skill}</li>`;
   });
@@ -90,14 +90,14 @@ projectElement.innerHTML = template;
 
 // POPUP window
 
-const popupContainer = document.createElement("div");
-popupContainer.classList.add("popup-container");
+const popupContainer = document.createElement('div');
+popupContainer.classList.add('popup-container');
 
-const overlay = document.querySelector("#popup");
-const Each_ProjectDetail = document.querySelectorAll("[id^='see-project-']");
+const overlay = document.querySelector('#popup');
+const EachProjectDetail = document.querySelectorAll("[id^='see-project-']");
 
 function createPopup(project) {
-  let Skills = "";
+  let Skills = '';
   project.Skills.forEach((skill) => {
     Skills += `<li>${skill}</li>`;
   });
@@ -171,15 +171,15 @@ function createPopup(project) {
   document.body.appendChild(popupContainer);
 }
 
-Each_ProjectDetail.forEach((button, index) => {
-  button.addEventListener("click", () => {
+EachProjectDetail.forEach((button, index) => {
+  button.addEventListener('click', () => {
     const project = projects[index];
     createPopup(project);
-    const popupClose = document.querySelector(".popupCloseButton");
+    const popupClose = document.querySelector('.popupCloseButton');
     const closePopupModel = () => {
       popupContainer.remove();
     };
-    popupClose.addEventListener("click", closePopupModel);
-    overlay.addEventListener("click", closePopupModel);
+    popupClose.addEventListener('click', closePopupModel);
+    overlay.addEventListener('click', closePopupModel);
   });
 });

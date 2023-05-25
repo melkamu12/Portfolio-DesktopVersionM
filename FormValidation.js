@@ -1,16 +1,16 @@
-function validateEmail(event) {
+const form = document.querySelector('.contact-form');
+const emailInput = document.getElementById('email');
+const errorMessage = document.getElementById('error-message');
+
+form.addEventListener('submit', (event) => {
   event.preventDefault(); // Prevent form submission
-
-  const emailInput = document.getElementById("email");
-  const errorMessage = document.getElementById("error-message");
   const email = emailInput.value;
-
-  if (email.trim() === "") {
-    errorMessage.textContent = "Please type your email on the provided space.";
+  if (email.trim() === '') {
+    errorMessage.textContent = 'Please type your email on the provided space.';
   } else if (email !== email.toLowerCase()) {
-    errorMessage.textContent = "Email must be in lowercase.";
+    errorMessage.textContent = 'Email must be in lowercase.';
   } else {
-    errorMessage.textContent = "";
-    event.target.closest("form").submit();
+    errorMessage.textContent = '';
+    form.submit();
   }
-}
+});
