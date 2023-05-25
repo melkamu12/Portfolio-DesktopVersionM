@@ -48,6 +48,7 @@
 - applying desktop adaptability with out affect your mobile version.
 - adaptation the media query with 768px above and bellow.
 - adding the work list
+- prserving data in browser
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
