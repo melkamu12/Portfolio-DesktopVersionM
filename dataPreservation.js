@@ -1,27 +1,27 @@
-const UserName = document.getElementById("name");
-const UserEmail = document.getElementById("email");
-const UserMessage = document.getElementById("message");
-const formcontrol = document.getElementById("contact-form");
+const userName = document.getElementById('name');
+const userEmail = document.getElementById('email');
+const userMessage = document.getElementById('message');
+const form = document.getElementById('contact-form');
 const contactFormData = {
-  UserFullName: String,
-  UseremailAddress: String,
-  UserMessageInformation: String,
+  fullName: '',
+  email: '',
+  message: '',
 };
 
-formcontrol.addEventListener("input", () => {
-  contactFormData.UserFullName = UserName.value;
-  contactFormData.email = UserEmail.value;
-  contactFormData.UserMessageInformation = UserMessage.value;
+form.addEventListener('input', () => {
+  contactFormData.fullName = userName.value;
+  contactFormData.email = userEmail.value;
+  contactFormData.message = userMessage.value;
 
-  localStorage.setItem("contactFormData", JSON.stringify(contactFormData));
+  localStorage.setItem('contactFormData', JSON.stringify(contactFormData));
 });
 
 window.onload = () => {
-  const contactData = JSON.parse(localStorage.getItem("contactFormData"));
+  const contactData = JSON.parse(localStorage.getItem('contactFormData'));
 
   if (contactData) {
-    UserName.value = contactData.UserFullName;
-    UserEmail.value = contactData.UseremailAddress;
-    UserMessage.value = contactData.UserMessageInformation;
+    userName.value = contactData.fullName;
+    userEmail.value = contactData.email;
+    userMessage.value = contactData.message;
   }
 };
