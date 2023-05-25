@@ -546,12 +546,12 @@ p.Content {
   border-bottom: 1px solid #c8d1e776;
 }
 
-.error-message {
-  color: hsla(0, 0%, 0%, 0.929);
+#error-message {
+  color: hsl(0, 100%, 50%);
   font-size: 20px;
   text-align: center;
   justify-content: center;
-  padding-left: 30vw;
+  padding-top: 11px;
 }
 
 /* popup windows design   */
