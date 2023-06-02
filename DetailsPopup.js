@@ -1,4 +1,4 @@
-const project = document.querySelector('#work');
+const project = document.querySelector('.work');
 let projectElement;
 
 if (project === null) {
